@@ -703,7 +703,16 @@ background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
 }
 /* cotact wrapper end */
 /* media query start */
+@media screen and (max-width: 1180px) {
+  .label-data .form-control,.label-data-one .form-control,.data-select{
+    width: 248px!important;
+  }
+  
+}
 @media screen and (max-width: 1024px) {
+  .btn-wrappers{
+    right: 47px!important;
+  }
   .robot-section {
     display: block;
   }
