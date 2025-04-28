@@ -504,6 +504,14 @@ backdrop-filter: blur(25px);
   max-height: 600px;
   background-color: transparent;
   scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+spline-viewer #logo{
+  display: none!important;
+  position: none!important;
+}
+iframe a{
+  display: none!important;
 }
 /* about us section end */
 /* cursoer css start here  */
