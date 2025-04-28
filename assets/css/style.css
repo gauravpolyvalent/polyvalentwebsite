@@ -183,7 +183,7 @@ font-weight: 600!important;
 .btn-wrappers {
   position: absolute;
   top: 5px;
-  right: 60px;
+  left: 68%;
   padding: 15px;
   border-radius: 10px;
   border-top-left-radius: 0;
@@ -194,6 +194,8 @@ font-weight: 600!important;
   display: flex;
   justify-content: space-between;
   background-image: url(../images/black\ frame.png);
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 20px;
   border-radius: 20px;
   max-width: 300px;
@@ -717,15 +719,38 @@ background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
   }
   
 }
-@media screen and (max-width: 1024px) {
+ @media screen and (max-width: 1399px) and (min-width:1215px) {
   .btn-wrappers{
-    right: 47px!important;
+   left: 72%; 
   }
-  .robot-section {
+ }
+ @media screen and (max-width: 1200px) and (min-width:320px) {
+  .btn-wrappers{
+   left: 69%; 
+  }
+  .robot-data{
+    margin: 33px auto;
+  }
+  .robot-section{
     display: block;
+    margin-top: 10px;
   }
+  .bar-wrapper{
+    text-align: center;
+    margin-top: 10px;
+  }
+ }
+  
+@media screen and (max-width: 991px) {
+  .btn-wrappers{
+    display: none;
+  }
+
 }
 @media screen and (max-width: 768px) {
+  .robot-data{
+    margin: 0 auto;
+  }
 
   .contact-item {
     padding: 27.5px 44px;
@@ -775,9 +800,7 @@ background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
   .btn-wrappers a {
     width: 217px;
   }
-  .robot-data {
-    max-width: 100%;
-  }
+  
   .robot-content-section {
     margin-top: 20px;
   }
