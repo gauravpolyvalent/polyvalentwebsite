@@ -59,7 +59,7 @@
                          <div class="position-relative " style="pointer-events: none;">
                           <div class="scroll-layer" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 10;"></div>
                           <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.86/build/spline-viewer.js"></script>
-                          <spline-viewer url="https://prod.spline.design/06xwhcsmGsFWSMR3/scene.splinecode"></spline-viewer>
+                          <spline-viewer id="splineScroll" url="https://prod.spline.design/06xwhcsmGsFWSMR3/scene.splinecode"></spline-viewer>
                         </div>
                       
                     </div>
@@ -292,7 +292,29 @@
     <script>
             new WOW().init(); // initialize WOW
     </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const viewer = document.getElementById("splineScroll");
     
+        // Style to make it scrollable
+        viewer.style.overflowY = "auto";
+        viewer.style.maxHeight = "600px";
+        viewer.style.display = "block";
+    
+        // Optional: hide scrollbars (can remove if not needed)
+        viewer.style.scrollbarWidth = "none";
+        viewer.style.msOverflowStyle = "none"; // IE 10+
+        viewer.style.overflow = "hidden auto"; // x hidden, y scroll
+    
+        // Optional Chrome scrollbar hide
+        viewer.style.setProperty('scrollbar-width', 'none');
+    
+        // Enable mouse wheel scroll
+        viewer.addEventListener('wheel', function (event) {
+          viewer.scrollTop += event.deltaY;
+        });
+      });
+    </script>
 </body>
 
 </html>

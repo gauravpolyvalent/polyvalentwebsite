@@ -506,13 +506,17 @@ backdrop-filter: blur(25px);
   
 /* footer section end */
 /* about us section start */
-.aboutus-wrapper spline-viewer{
-  pointer-events: auto;
-  overflow-y: scroll;
+.aboutus-wrapper spline-viewer {
+  pointer-events: auto;       
+  overflow-y: auto;           
   max-height: 600px;
   background-color: transparent;
   scroll-behavior: smooth;
-  scrollbar-width: none;
+  scrollbar-width: none;    
+}
+
+.aboutus-wrapper spline-viewer::-webkit-scrollbar {
+  display: none;
 }
 .mobile-sphere{
   background-image: url(../images/aboutus-mobile-background.png);
@@ -759,11 +763,21 @@ background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
 }
 /* client section wrapper end */
 /* media query start */
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1400px) {
   .label-data .form-control,.label-data-one .form-control,.data-select{
-    width: 248px!important;
+    width: 329px!important;
   }
   
+}
+@media screen and (max-width: 1200px) {
+  .label-data .form-control,.label-data-one .form-control,.data-select{
+    width: 275px!important;
+  }
+}
+@media screen and (max-width: 993px) and (min-width: 992px) {
+  .label-data .form-control,.label-data-one .form-control,.data-select{
+    width: 276px!important;
+  }
 }
 @media screen and (max-width: 425px) and (min-width:320px) {
   .client-section-wrapper img {
