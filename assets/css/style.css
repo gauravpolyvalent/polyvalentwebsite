@@ -757,6 +757,9 @@ background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
 .mobile-sphere{
   display: none;
 }
+.width-90{
+  width: 90px!important;
+}
 /* client section wrapper end */
 /* media query start */
 @media screen and (max-width: 1400px) {
