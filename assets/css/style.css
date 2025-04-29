@@ -507,17 +507,13 @@ backdrop-filter: blur(25px);
 /* footer section end */
 /* about us section start */
 .aboutus-wrapper spline-viewer {
-  pointer-events: auto;       
-  overflow-y: auto;           
   max-height: 600px;
   background-color: transparent;
   scroll-behavior: smooth;
   scrollbar-width: none;    
 }
 
-.aboutus-wrapper spline-viewer::-webkit-scrollbar {
-  display: none;
-}
+
 .mobile-sphere{
   background-image: url(../images/aboutus-mobile-background.png);
   height: 100%;
@@ -812,6 +808,7 @@ background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
 
 }
 @media screen and (max-width: 768px) {
+
   .robot-data{
     margin: 0 auto;
   }
