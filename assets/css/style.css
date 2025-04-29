@@ -508,12 +508,36 @@ backdrop-filter: blur(25px);
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
-spline-viewer #logo{
-  display: none!important;
-  position: none!important;
+.mobile-sphere{
+  background-image: url(../images/aboutus-mobile-background.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 166px;
 }
-iframe a{
-  display: none!important;
+.gradient-two{
+
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -1.2px;
+background: linear-gradient(90deg, #6954E5 0%, #D14DFE 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.history-wrapper{
+  border-left: 2px solid;
+  border-image: linear-gradient(135deg, #3731FF, #7C7EF1, #74D3FF, #050CD7) 1;
+  padding: 20px;
+}
+.team-content{
+  text-align: center;
+  margin-top: 20px;
+}
+.team-content img{
+  width: 100px;
+  height: 100px;
 }
 /* about us section end */
 /* cursoer css start here  */
@@ -712,12 +736,32 @@ background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
   height: 100%;
 }
 /* cotact wrapper end */
+/* client section wrapper start */
+.client-section-wrapper{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+.client-section-wrapper img{
+  width: 140px;
+}
+.mobile-sphere{
+  display: none;
+}
+/* client section wrapper end */
 /* media query start */
 @media screen and (max-width: 1180px) {
   .label-data .form-control,.label-data-one .form-control,.data-select{
     width: 248px!important;
   }
   
+}
+@media screen and (max-width: 425px) and (min-width:320px) {
+  .client-section-wrapper img {
+    width: 118px;}
 }
  @media screen and (max-width: 1399px) and (min-width:1215px) {
   .btn-wrappers{
@@ -751,7 +795,12 @@ background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
   .robot-data{
     margin: 0 auto;
   }
-
+  .about-desktop{
+    display: none;
+  }
+  .mobile-sphere{
+    display: block;
+  }
   .contact-item {
     padding: 27.5px 44px;
     width: auto;
@@ -793,6 +842,7 @@ background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
   }
   .counter-data {
     display: block !important;
+    text-align: center;
   }
   .counter-data > div {
     margin-top: 13px;
