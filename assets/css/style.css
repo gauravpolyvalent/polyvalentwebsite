@@ -281,10 +281,16 @@ font-weight: 600!important;
 }
 /* service section end */
 /* project section start */
-.portfolio-subwrapper,.client-subwrapper {
+.portfolio-subwrapper{
   border-radius: 40px;
   background: #f8f8f8;
-  width: 400px;
+  width: 400px!important;
+  padding: 10px;
+  min-height: 400px!important;
+}
+.client-subwrapper {
+  border-radius: 40px;
+  background: #f8f8f8;
   padding: 10px;
 }
 .portfolio-wrapper img {

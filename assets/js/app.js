@@ -18,14 +18,26 @@ $(document).ready(function () {
         nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-right"></i></button>',
         responsive: [
             {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    arrows: true
+                }
+            },
+            {
                 breakpoint: 768,
                 settings: {
+                    slidesToShow: 2,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 480, // More realistic than 320
+                settings: {
                     slidesToShow: 1,
-                    arrows: false,
+                    arrows: false
                 }
             }
         ]
     });
 });
-
-
