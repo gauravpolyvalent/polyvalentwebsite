@@ -749,7 +749,6 @@ background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  padding: 20px;
 }
 .client-section-wrapper img{
   width: 140px;
@@ -758,7 +757,7 @@ background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
   display: none;
 }
 .width-90{
-  width: 90px!important;
+  width: 100px!important;
 }
 /* client section wrapper end */
 /* media query start */
@@ -778,10 +777,7 @@ background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
     width: 276px!important;
   }
 }
-@media screen and (max-width: 425px) and (min-width:320px) {
-  .client-section-wrapper img {
-    width: 118px;}
-}
+
  @media screen and (max-width: 1399px) and (min-width:1215px) {
   .btn-wrappers{
    left: 72%; 
