@@ -173,7 +173,7 @@ font-weight: 600!important;
 }
 .btn-wrappers a {
   border-radius: 40px !important;
-  width: 220px;
+  /* width: 220px; */
   background-color: #0b68db !important;
   height: 50px;
   text-align: center;
@@ -864,7 +864,7 @@ background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
     margin-top: 13px;
   }
   .btn-wrappers a {
-    width: 217px;
+    /* width: 217px; */
   }
   
   .robot-content-section {
