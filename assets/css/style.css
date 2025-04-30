@@ -530,7 +530,7 @@ backdrop-filter: blur(25px);
 
 .mobile-sphere{
   background-image: url(../images/aboutus-mobile-background.png);
-  height: 100%;
+
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 166px;
