@@ -169,7 +169,7 @@ font-weight: 600!important;
   border-radius: 20px;
   width: 100%;
   position: relative;
-  height: 28.75rem
+  height: 30.75rem;
 }
 .btn-wrappers a {
   border-radius: 40px !important;
@@ -182,7 +182,7 @@ font-weight: 600!important;
 }
 .btn-wrappers {
   position: absolute;
-  top: 5px;
+  top:20px;
   left: 68%;
   padding: 15px;
   border-radius: 10px;
@@ -224,13 +224,14 @@ font-weight: 600!important;
   margin-top: 10px;
 }
 .why-content {
-  max-width: 700px;
-  margin-top: 30px !important;
+  max-width: 833px;
+  margin-top: 42px !important;
   margin: 0 auto;
-  font-weight: 700;
+  font-size: 36px;
+  font-weight: 500!important;
 }
 .heading-line {
-  color: #838383;
+  color: #838383!important;
 }
 /*why section end*/
 /* service section start */
@@ -364,7 +365,7 @@ font-weight: 600!important;
   border-radius: 40px;
 }
 .mid-subwrapper {
-  padding-top: 135px !important;
+  /* padding-top: 135px !important; */
   padding: 20px;
 }
 .mid-section-wrapper h3 {
@@ -413,6 +414,12 @@ max-width: 640px;
 margin: 0 auto;
   padding: 20px;
   padding-top: 170px;
+}
+.mid-shape-one {
+  max-width: 695px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 50px;
 }
 /* mid section two end */
 /* client section start */
@@ -484,7 +491,7 @@ backdrop-filter: blur(25px);
   font-size: 14px!important;
 }
 .form-data .form-control {
-    max-width: 300px;
+    /* max-width: 300px; */
     border-radius: 12px!important;
     border-top-right-radius: 0!important;
     border-bottom-right-radius: 0!important;
@@ -739,7 +746,8 @@ height: 1px;
 background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
 }
 .home_spline_roboto{
-  height: 100%;
+  height: 97%;
+  margin-left: 213px;
 }
 /* cotact wrapper end */
 /* client section wrapper start */
@@ -807,7 +815,9 @@ background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
 
 }
 @media screen and (max-width: 768px) {
-
+  .home_spline_roboto{
+    margin-left: 0;
+  }
   .robot-data{
     margin: 0 auto;
   }
@@ -838,8 +848,15 @@ background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
     padding-top: 90px!important;
   }
     .mid-shape h1{
-        font-size: 31px;
+        font-size: 20px;
         margin-top: 120px;
+    }
+    .mid-shape-one {
+      font-size: 20px;
+      padding: 0;
+    }
+    .why-content{
+      font-size: 17px;
     }
   .mid-subwrapper,.mid-shape {
     padding-top: 51px !important;
