@@ -157,15 +157,16 @@ font-weight: 600!important;
 /* nav section end */
 /* roboy section start */
 
-.robot-section {
+/* .robot-section {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-}
+} */
 .robot-container {
   background-image: url(../images/homepage\ rectangle.png);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain; 
   border-radius: 20px;
   width: 100%;
   position: relative;
@@ -182,8 +183,8 @@ font-weight: 600!important;
 }
 .btn-wrappers {
   position: absolute;
-  top:20px;
-  left: 68%;
+  top:15px;
+  left: 71%;
   padding: 15px;
   border-radius: 10px;
   border-top-left-radius: 0;
@@ -196,9 +197,10 @@ font-weight: 600!important;
   background-image: url(../images/black\ frame.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  height: 224px;
   padding: 20px;
   border-radius: 20px;
-  max-width: 300px;
 }
 .arrow-svg {
   background-color: #0b68db;
@@ -241,7 +243,7 @@ font-weight: 600!important;
   align-self: stretch;
   border-radius: 16px;
   background: rgba(0, 0, 0, 0.2);
-  margin-top: 340px;
+  margin-top: 227px;
 }
 .sub-services:nth-child(1) {
   margin-top: 10px;
@@ -285,7 +287,7 @@ font-weight: 600!important;
 .portfolio-subwrapper{
   border-radius: 40px;
   background: #f8f8f8;
-  /* width: 400px!important; */
+  max-width: 400px!important;
   padding: 10px;
   min-height: 400px!important;
 }
@@ -318,6 +320,7 @@ font-weight: 600!important;
   background: #fff;
   box-shadow: 0px 4px 19.8px 0px rgba(47, 102, 245, 0.25);
 }
+ 
 .portfolio-wrapper .slick-initialized .slick-slide,
 .client-wrapper .slick-initialized .slick-slide {
   margin: 10px;
@@ -363,6 +366,8 @@ font-weight: 600!important;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 40px;
+  width: 87%;
+  margin: 0 auto;
 }
 .mid-subwrapper {
   /* padding-top: 135px !important; */
@@ -408,6 +413,8 @@ font-weight: 600!important;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 40px;
+  width: 97%;
+  margin: 0 auto;
 }
 .mid-shape {
 max-width: 640px;
@@ -767,6 +774,9 @@ background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
 .width-90{
   width: 100px!important;
 }
+.para-service{
+  font-size: 16px;
+}
 /* client section wrapper end */
 /* media query start */
 @media screen and (max-width: 1400px) {
@@ -788,15 +798,23 @@ background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
 
  @media screen and (max-width: 1399px) and (min-width:1215px) {
   .btn-wrappers{
-   left: 72%; 
+   left: 71%;
+   top: 30px; 
+   width: 218px;
+  }
+  .robot-data{
+    height: auto;
   }
  }
  @media screen and (max-width: 1200px) and (min-width:320px) {
   .btn-wrappers{
-   left: 69%; 
+   left: 71%; 
+   top: 59px; 
+   width: 218px;
   }
   .robot-data{
     margin: 33px auto;
+    height: auto;
   }
   .robot-section{
     display: block;
@@ -815,6 +833,15 @@ background: radial-gradient(43.08% 5800% at 50% 50%, #2F66F5 0%, #FFF 100%)
 
 }
 @media screen and (max-width: 768px) {
+  .portfolio-subwrapper .slick-slide > div{
+    width: 100%!important;
+  }
+  .mid-section-wrapper{
+    width: 100%;
+  }
+  .robot-container{
+    background-size: auto;
+  }
   .home_spline_roboto{
     margin-left: 0;
   }
