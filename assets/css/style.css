@@ -595,6 +595,10 @@ background-clip: text;
 }
 /* our work end */
 /* our services  start */
+.service-dotted li{
+  list-style: disc!important;
+  color: #838383;
+}
 .service-wrapper{
   display: flex;
   border-radius:32px;
